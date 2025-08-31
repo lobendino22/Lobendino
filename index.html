@@ -14,166 +14,114 @@
   <!-- Animate.css -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
-  <!-- AOS (Animate On Scroll) -->
+  <!-- AOS -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet"/>
 
   <style>
-    .footer {
-  background: linear-gradient(90deg, #0d0d0d, #1f1f1f);
-  color: #f8f9fa;
-  box-shadow: 0 -3px 8px rgba(0,0,0,0.6);
-}
-
-.footer a {
-  color: #0dcaf0;
-  transition: 0.3s;
-}
-
-.footer a:hover {
-  color: #ff0077;
-}
-
     body {
-      background-color: #121212;
-      color: #f8f9fa;
+      background: linear-gradient(135deg, #bbdefb, #90caf9, #64b5f6); /* blue tones */
+      color: #0d1b2a;
       font-family: "Segoe UI", sans-serif;
     }
 
     /* Navbar */
     .navbar {
-      background: linear-gradient(90deg, #0d0d0d, #1f1f1f);
-      box-shadow: 0 3px 8px rgba(0,0,0,0.6);
+      background: linear-gradient(90deg, #1565c0, #1e88e5, #42a5f5);
+      box-shadow: 0 3px 8px rgba(0,0,0,0.3);
     }
-
     .navbar-brand {
       font-weight: bold;
-      color: #0dcaf0 !important;
-      transition: 0.3s;
+      color: #e3f2fd !important;
     }
     .navbar-brand:hover {
-      color: #ff0077 !important;
+      color: #ffeb3b !important;
+    }
+
+    .nav-link {
+      color: #e3f2fd !important;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+    .nav-link:hover {
+      color: #ffeb3b !important;
     }
 
     /* Profile Header */
     .profile-header {
-      background: linear-gradient(135deg, #1f1f1f, #343a40);
-      padding: 50px 0;
+      background: linear-gradient(135deg, #2196f3, #64b5f6, #bbdefb);
+      padding: 70px 0;
       text-align: center;
+      color: #fff;
     }
     .profile-header img {
-  border: 5px solid #0dcaf0;
-  box-shadow: 0 0 20px #0dcaf0;
-  transition: transform 0.5s;
-  margin-top: 20px; /* adjust mo ito (pwede 30px or 40px) */
-}
-
+      border: 5px solid #e3f2fd;
+      box-shadow: 0 0 25px rgba(21,101,192,0.9);
+      transition: transform 0.5s;
+    }
     .profile-header img:hover {
       transform: rotate(5deg) scale(1.1);
     }
 
-    /* Section */
-   /* Section */
-.section {
-  background-color: #1e1e1e;
-  border-radius: 10px;
-  padding: 15px 20px; /* dati 25px, binawasan ko */
-  margin-bottom: 20px; /* dati 25px, binawasan ko */
-  box-shadow: 0 5px 15px rgba(0,0,0,0.4);
-  transition: 0.4s;
-  margin: 40px;
-  margin-left: 80px;
-  margin-right: 100pxgit push origin main;
-}
-.section:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.6);
-}
-
+    /* Sections */
+    .section {
+      background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+      border-radius: 15px;
+      padding: 25px;
+      margin: 40px auto;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      transition: 0.3s;
+    }
+    .section:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    }
+    .section h3 {
+      color: #0d47a1;
+      font-weight: bold;
+    }
 
     /* Gallery */
     .gallery img {
       width: 100%;
-      border-radius: 10px;
+      border-radius: 12px;
       transition: transform 0.4s, box-shadow 0.4s;
+      border: 3px solid #90caf9;
     }
     .gallery img:hover {
-      transform: scale(1.08);
-      box-shadow: 0 0 20px #0dcaf0;
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(33,150,243,0.8);
     }
 
     /* Contact */
     #contact i {
-      color: #0dcaf0;
+      color: #1565c0;
       margin-right: 10px;
       transition: 0.3s;
     }
     #contact i:hover {
-      color: #ff0077;
+      color: #ffeb3b;
       transform: scale(1.2);
     }
 
-    /* Navbar pogi design */
-    .pogi-nav {
-      background: linear-gradient(135deg, rgba(0, 200, 255, 0.2), rgba(255, 0, 120, 0.2));
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-      padding: 10px 20px;
-      transition: all 0.4s ease-in-out;
+    /* Footer */
+    .footer {
+      background: linear-gradient(90deg, #1565c0, #1e88e5, #42a5f5);
+      color: #fff;
+      box-shadow: 0 -3px 8px rgba(0,0,0,0.3);
     }
-
-    .pogi-nav:hover {
-      background: linear-gradient(135deg, rgba(0, 200, 255, 0.4), rgba(255, 0, 120, 0.4));
-      box-shadow: 0 4px 15px rgba(0,0,0,0.6);
-    }
-
-    .pogi-nav .navbar-brand {
-      font-weight: bold;
-      font-size: 1.4rem;
-      background: linear-gradient(90deg, #0dcaf0, #ff0077);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+    .footer a {
+      color: #e3f2fd;
       transition: 0.3s;
     }
-
-    .pogi-nav .navbar-brand:hover {
-      letter-spacing: 2px;
-      transform: scale(1.05);
-    }
-
-    .pogi-nav .nav-link {
-      color: #f8f9fa !important;
-      margin: 0 8px;
-      font-weight: 500;
-      position: relative;
-      transition: 0.3s;
-    }
-
-    .pogi-nav .nav-link::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: -5px;
-      width: 0%;
-      height: 2px;
-      background: linear-gradient(90deg, #0dcaf0, #ff0077);
-      transition: 0.4s;
-    }
-
-    .pogi-nav .nav-link:hover::after {
-      width: 100%;
-    }
-
-    .pogi-nav .nav-link:hover {
-      color: #0dcaf0 !important;
-      transform: translateY(-2px);
+    .footer a:hover {
+      color: #ffeb3b;
     }
   </style>
 </head>
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark pogi-nav fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <a class="navbar-brand animate__animated animate__pulse animate__infinite" href="#">
       <i class="fas fa-user-circle"></i> My Profile
     </a>
@@ -209,15 +157,11 @@
         I love playing basketball, eating, and sleeping! I also enjoy hanging out with friends, 
         exploring new places, and trying out different food. Life is short, so I make sure to balance fun and learning every day.
       </p>
-
-
-
     </div>
 
     <!-- Background -->
     <div class="section" id="background" data-aos="fade-left">
       <h3>Background</h3>
-
       <p>
         I come from a simple and loving family. I have two siblings, and as the only son, 
         I often help my father on the farm while my mom takes care of our home. 
@@ -225,8 +169,6 @@
         Growing up this way taught me the value of hard work, responsibility, 
         and appreciating even the simple things in life.
       </p>
-
-     
     </div>
 
     <!-- Hobbies -->
@@ -237,7 +179,6 @@
         <li>Volleyball</li>
         <li>Eating</li>
         <li>Watching Movies</li>
-
       </ul>
     </div>
 
@@ -251,7 +192,6 @@
       </div>
     </div>
 
-
     <!-- Contact -->
     <div class="section" id="contact" data-aos="fade-up">
       <h3>Contact Information</h3>
@@ -260,21 +200,9 @@
       <p><a href="https://web.facebook.com/ledor.lobendino.5/" target="_blank"><i class="fab fa-facebook"></i></a> fb.com/rodellobendino</p>
       <p><a href="https://github.com/lobendino22" target="_blank"><i class="fab fa-github"></i></a> github.com/lobendino22</p>
     </div>
+  </div>
 
-    
-
-  <!-- Scripts -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 1000, // speed of animation
-      once: true      // animation happens only once
-    });
-  </script>
-
-    <!-- Footer -->
+  <!-- Footer -->
   <footer class="footer mt-5 py-3 text-center">
     <div class="container">
       <p class="mb-2">© 2025 Rodel L. Lobendino | All Rights Reserved</p>
@@ -286,5 +214,15 @@
     </div>
   </footer>
 
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
 </body>
 </html>
